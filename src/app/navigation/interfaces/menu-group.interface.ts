@@ -1,0 +1,11 @@
+import { MenuCollapseInterface } from './menu-collapse.interface';
+
+export interface MenuGroupInterface 
+{
+    id: string,
+    title: string;
+    translate?: string;
+    type: 'group';
+    icon?: string; //references icon material
+    children: MenuCollapseInterface[]
+}

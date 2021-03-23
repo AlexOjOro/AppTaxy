@@ -1,0 +1,7 @@
+<div class="custom-control custom-checkbox custom-control-lg mb-1">
+  <input type="checkbox" class="custom-control-input" name="{{nameControl}}" id="{{nameControl}}"
+         [checked]="value"
+         [disabled]="isDisabled"
+         (change)="onChecked($event)"/>
+  <label class="custom-control-label" for="{{nameControl}}">{{caption}}</label>
+  </div>

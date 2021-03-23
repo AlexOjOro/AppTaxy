@@ -1,0 +1,61 @@
+{
+  "HOME": {
+    "TITLE": "Hello Angular with ngx-translate!",
+    "SELECT": "Change language"
+  },
+  "NAV": {
+    "APPLICATIONS": "Applications",
+    "DASHBOARD": {
+      "TITLE": "Modules",
+      "PROJECT": "Project"
+    },
+    "CATALOG": {
+      "TITLE": "Catalog"
+    },
+    "NEWSERVICE": "New Service"
+  },
+  "ERRORS": {
+    "NOT_FOUNT": "PAGE NOT FOUNT"
+  },
+  "ENVIRONMENTS": {
+    "DEVELOPMENT": "DEVELOPMENT",
+    "PRODUCTION": "PRODUCTION"
+  },
+  "TABLE": {
+    "FILTER": "Filter",
+    "SELECT_ROW": "Select a row"
+  },
+  "GENERAL": {
+    "BUTTONS": {
+      "ADD": "Add",
+      "EDIT": "Edit",
+      "CANCEL": "Cancel",
+      "SAVE": "Save"
+    },
+    "ELEMENTS": {
+      "SELECT": "Select"
+    }
+  },
+  "TEST": {
+    "TITLE": "Title",
+    "NAME": "Name",
+    "TABLE": {
+      "name": "Console"
+    }
+  },
+  "CONSOLE": {
+    "ALREADY_EXISTS": "The console already exists",
+    "TITLE": "Consoles",
+    "TABLE": {
+      "id": "Identify",
+      "name": "Name"
+    }
+  },
+  "NEWSERVICE":{
+    "TABLE":{
+      "id": "Identify",
+      "name": "Name"
+    }
+  }
+
+}

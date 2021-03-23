@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Aplication Name</title>
+  <base href="/">
+
+  <meta charset="utf-8">
+  <meta name="author" content="JABIL TEC PACK">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="assets/icons/meteocons/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+  <!-- App Splash Screen CSS -->
+  <style type="text/css">
+    #app-splash-screen {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #3C4252;
+      z-index: 99999;
+      pointer-events: none;
+    }
+
+      #app-splash-screen .content-loading {
+        height: 100%;
+        position: fixed;
+        z-index: 9999;
+        background-color: white;
+        width: 100%;
+        top: 0;
+      }
+
+        #app-splash-screen .content-loading .body-loading {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+          #app-splash-screen .content-loading .body-loading img {
+            height: 43px;
+            display: flex;
+          }
+
+          #app-splash-screen .content-loading .body-loading .loader,
+          #app-splash-screen .content-loading .body-loading .wrapper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+          }
+
+          #app-splash-screen .content-loading .body-loading .wrapper {
+            margin-top: 30px;
+          }
+
+          #app-splash-screen .content-loading .body-loading .loader {
+            width: 90vw;
+          }
+
+            #app-splash-screen .content-loading .body-loading .loader .wrapper span {
+              width: 5px;
+              height: 5px;
+              background: #005288;
+              display: inline-block;
+              position: relative;
+              margin: 0px 2px;
+              border-radius: 50%;
+              opacity: 0;
+              animation: loading 3000ms ease-in-out infinite;
+            }
+
+              #app-splash-screen .content-loading .body-loading .loader .wrapper span:nth-child(5) {
+                animation-delay: 100ms;
+              }
+
+              #app-splash-screen .content-loading .body-loading .loader .wrapper span:nth-child(4) {
+                animation-delay: 200ms;
+              }
+
+              #app-splash-screen .content-loading .body-loading .loader .wrapper span:nth-child(3) {
+                animation-delay: 300ms;
+              }
+
+              #app-splash-screen .content-loading .body-loading .loader .wrapper span:nth-child(2) {
+                animation-delay: 400ms;
+              }
+
+              #app-splash-screen .content-loading .body-loading .loader .wrapper span:nth-child(1) {
+                animation-delay: 500ms;
+              }
+
+    @keyframes loading {
+      0% {
+        transform: translateX(-350px);
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+      }
+
+      40% {
+        transform: translateX(0px);
+        opacity: 1;
+      }
+
+      50% {
+        width: 7px;
+        height: 7px;
+      }
+
+      100% {
+        transform: translateX(350px);
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+      }
+    }
+  </style>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <app-splash-screen id="app-splash-screen">
+    <div class="content-loading">
+      <div class="body-loading">
+        <div>
+          <img src="assets/icons/app/logo-jabil@2x.png" alt="JABIL">
+          <div class="loader">
+            <div class="wrapper">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </app-splash-screen>
+  <app-root></app-root>
+
+
+  <script>
+        //configuracion de servicios apuntados
+    window.applicationId = "ESD Auto-Monitor";
+  </script>
+  <!--
+    //ADD SECURITY
+  -->
+  
+  <script type="text/javascript" src="https://mxgdlm4web81:9501/Quetza.Dev/.well-known/oauth2/configuration/b011a306-1bf2-4dae-84a6-8082ba6bb2a6?type=javascript"></script>
+  
+</body>
+</html>
+
+

@@ -1,0 +1,10 @@
+  <div id="dvContainer" layout="column">
+    <div flex>
+      <h1>{{ "another" | translate }}</h1>
+    </div>
+    <div flex>
+      <mat-progress-bar *ngIf="loading" color="primary" mode="indeterminate"></mat-progress-bar>
+      <app-catalog [columns]="columns" [data]="listData" (buttonAdd)="addConsole()" (buttonEdit)="editConsole($event)" class="table" [station]="station"></app-catalog>
+    
+    </div>
+  </div>

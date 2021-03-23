@@ -1,0 +1,9 @@
+<label>{{caption}}</label>
+<input
+       id="{{nameControl}}"
+       name="{{nameControl}}"
+       type="{{type}}"
+       class="form-control"
+       [value]="value"
+       [disabled]="isDisabled"
+       (input)="onInput($event.target.value)"/>

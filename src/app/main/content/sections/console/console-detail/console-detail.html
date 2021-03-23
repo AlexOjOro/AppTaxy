@@ -1,0 +1,19 @@
+<h2 mat-dialog-title>{{"TEST.TITLE" | translate}}</h2>
+<mat-dialog-content [formGroup]="formGroup">
+  <form [formGroup]="formGroup">
+    <div class="form-group">
+      <jabil-input caption="{{'TEST.NAME' | translate}}" formControlName="name"></jabil-input>
+    </div>
+    <!--<div class="form-group">
+    <jabil-select [dataSource]="list" isMultiple="true" displayText="Name" displayValue="Id" formControlName="prueba" caption="{{'TEST.NAME' | translate}}"></jabil-select>
+  </div>
+    <!--<div class="form-group">
+      <jabil-checkbox nameControl="cbPrueba" caption="Prueba" formControlName="prueba"></jabil-checkbox>
+    </div>-->
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button-cancel (eventClick)="close()"></button-cancel> &nbsp;
+  <button-save (eventClick)="save()"></button-save>
+</mat-dialog-actions>
+

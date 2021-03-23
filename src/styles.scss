@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@import "app/core/scss/core";
+@import '~@jabil/ui-styles/dist/main.css';
+@import '~@jabil/ui-styles/dist/primeng.css';
+    
+
+.table {
+    width: 100%;
+    height: 100%;
+}
+  
+html,
+body {
+  height: 100%;
+  font-size: 14px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+#root {
+  height: 100%;
+}

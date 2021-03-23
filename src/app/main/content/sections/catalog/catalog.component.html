@@ -1,0 +1,26 @@
+<mat-card class="matCard">
+  <!--Div Buttons-->
+  <div>
+    <button-add (eventClick)="add()"></button-add>
+    &nbsp;
+    <button-edit (eventClick)="edit()"></button-edit>
+  </div>
+
+  <!--Filter Field-->
+  <mat-form-field class="filter">
+    <mat-label>{{"TABLE.FILTER" | translate}}</mat-label>
+    <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Search">
+  </mat-form-field>
+
+  <!--Table with all data-->
+  <table mat-table *ngIf="data" [dataSource]="data" matsort>
+    <!--Columns from Object-->
+    <ng-container *ngFor="let column of columns" [matColumnDef]="column">
+      <mat-header-cell *matHeaderCellDef>{{ (station + '.TABLE.' + column) | translate}}</mat-header-cell>
+      <mat-cell *matCellDef="let object">{{object[column]}}</mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="columns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: columns;" (click)="highlight(row)" [ngClass]="{'highlightTableColor': selectedRow === row}"></mat-row>
+  </table>
+  <mat-paginator [pageSizeOptions]="[5, 10, 15, 30,100]"></mat-paginator>
+</mat-card>

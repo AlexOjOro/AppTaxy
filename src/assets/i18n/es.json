@@ -1,0 +1,76 @@
+{
+  "HOME": {
+    "TITLE": "Hello Angular with ngx-translate!",
+    "SELECT": "Cambiar lenguaje"
+  },
+  "NAV": {
+    "APPLICATIONS": "Aplicaciones",
+    "DASHBOARD": {
+      "TITLE": "Modulos",
+      "PROJECT": "Project"
+    },
+    "CATALOG": {
+      "TITLE": "Catalogos"
+    },
+    "NEWSERVICE": "Nuevo Servicio"
+  },
+  "ERRORS": {
+    "NOT_FOUNT": "PAGINA NO ENCONTRADA"
+  },
+  "ENVIRONMENTS": {
+    "DEVELOPMENT": "DESARROLLO",
+    "PRODUCTION": "PRODUCCION"
+  },
+  "TABLE": {
+    "FILTER": "Filter",
+    "SELECT_ROW": "Selecciona una fila"
+  },
+  "GENERAL": {
+    "BUTTONS": {
+      "ADD": "Agregar",
+      "EDIT": "Editar",
+      "CANCEL": "Cancelar",
+      "SAVE": "Guardar"
+    },
+    "ELEMENTS": {
+      "SELECT": "Seleccionar"
+    }
+  },
+  "TEST": {
+    "TITLE": "Titulo",
+    "NAME": "Nombre",
+    "TABLE": {
+      "name": "Consola Prueba"
+    }
+  },
+  "CONSOLE": {
+    "ALREADY_EXISTS": "La consola existe actualmente",
+    "TITLE": "Consolas",
+    "TABLE": {
+      "id": "identificador",
+      "name": "Nombre"
+    }
+  },
+  "NEWSERVICE":{
+    "TABLE":{
+      "id": "Identificador",
+      "name": "Nombre"
+    }
+  },
+  "MATERIAL": {
+    "TITLE": "Materials",
+    "TABLE": {
+      "id": "Identificador",
+      "name": "Nombre",
+      "description": "Descripción"
+    },
+    "SUCCESS": "Llamada satisfactoria",
+    "ERROR": "Hubo un error, contacta con sistemas",
+    "OTRO":  "Titulo"
+  },
+  "MODULO": {
+    "NAME": "Name",
+    "WIP": "Wip",
+    "STEP": "Step"
+  }
+}

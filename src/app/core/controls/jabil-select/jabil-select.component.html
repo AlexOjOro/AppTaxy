@@ -1,0 +1,11 @@
+<label>{{caption}}</label>
+<ng-select
+           id="{{nameControl}}"
+           name="{{nameControl}}"
+           [value]="value"
+           [disabled]="isDisabled"
+           [multiple]="isMultiple"
+           (change)="onSelected($event)">
+  <ng-option *ngFor="let item of dataSource" [value]="item[displayValue]">{{item[displayText]}}</ng-option>
+</ng-select>
+

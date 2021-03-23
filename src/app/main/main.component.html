@@ -1,0 +1,58 @@
+<mat-sidenav-container>
+    <div id="app-main-content">
+        
+        <ng-container *ngIf="appSettings.layout.toolbar === 'above'">
+            <app-toolbar class="above" [ngClass]="appSettings.colorClasses.toolbar"></app-toolbar>
+        </ng-container>
+
+        <app-navbar-horizontal class="top-navbar" fxHide fxShow.gt-md 
+                                [ngClass]="appSettings.colorClasses.navbar"
+                                *ngIf="appSettings.layout.navigation === 'top'">
+
+        </app-navbar-horizontal>
+
+        <div id="wrapper">
+            <app-navbar-vertical class="left-navbar"
+                                [folded]="appSettings.layout.navigationFolded"
+                                [ngClass]="appSettings.colorClasses.navbar"
+                                  *ngIf="appSettings.layout.navigation === 'left' || appSettings.layout.navigation === 'top'">
+
+            </app-navbar-vertical>
+
+            <div class="content-wrapper">
+                <ng-container *ngIf="appSettings.layout.toolbar === 'below'">
+                    <app-toolbar class="below" [ngClass]="appSettings.colorClasses.toolbar"></app-toolbar>
+                </ng-container>                            
+                
+                <app-content style="overflow: scroll;"></app-content>
+
+                <ng-container *ngIf="appSettings.layout.footer === 'below'">
+                    <app-footer class="below"></app-footer>
+                </ng-container>
+                                
+            </div>
+
+            <app-navbar-vertical [folded]="appSettings.layout.navigationFolded"
+                                 class="right-navbar"
+                                 [ngClass]="appSettings.colorClasses.navbar"
+                                 *ngIf="appSettings.layout.navigation === 'right'">
+
+            </app-navbar-vertical>
+        </div>
+
+        <ng-container *ngIf="appSettings.layout.footer === 'above'">
+            <app-footer class="above" [ngClass]="appSettings.colorClasses.footer"></app-footer>        
+        </ng-container>
+
+    </div>
+
+    <mat-sidenav appMatSidenavHelper="quick-panel" appMatSidenavMode="over" appMatSidenavPosition="end">
+        <app-quick-panel></app-quick-panel>
+    </mat-sidenav>    
+
+    <mat-sidenav appMatSidenavHelper="config-app" appMatSidenavMode="over" appMatSidenavPosition="start">
+        <app-theme-options></app-theme-options>
+    </mat-sidenav>
+    
+</mat-sidenav-container>
+

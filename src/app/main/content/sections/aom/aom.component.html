@@ -1,0 +1,55 @@
+<div class="container">
+    <mat-card class="w-auto mt - 20px">
+        <!--Div Buttons-->
+        <mat-card-content>
+            <div>
+                <button-add (eventClick)="add()"></button-add>
+                &nbsp;
+                <button-edit (eventClick)="edit()"></button-edit>
+            </div>
+
+
+
+            <!--Filter Field-->
+            <mat-form-field class="filter">
+                <mat-label>{{"TABLE.FILTER" | translate}}</mat-label>
+                <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Search">
+            </mat-form-field>
+        </mat-card-content>
+
+
+        <!--Table with all data-->
+        <div class="container">
+            <table class="table table-bordered table-hover">
+                <thead class="thead-light">
+                    <tr>
+
+                        <th>Name</th>
+                        <th>Last Name</th>
+                        <th>Employee Number</th>
+                        <th>NT Account</th>
+                        <th>Project</th>
+                        <th>Last Updated</th>
+                        <th>User Updater</th>
+                        <th>Active</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <mat-paginator [pageSizeOptions]="[5, 10, 15, 30,100]"></mat-paginator>
+    </mat-card>
+</div>
